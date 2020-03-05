@@ -1,0 +1,11 @@
+{{#if errors}}
+    {{#each errors}}
+        {{msg}}
+    {{/each}}
+{{else if success_msg != ''}}
+    {{success_msg}}
+{{else if error_msg != ''}}
+    {{error_msg}}
+{{else if error != ''}}
+    {{error}}
+{{/if}}

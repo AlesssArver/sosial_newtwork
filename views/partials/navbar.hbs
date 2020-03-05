@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="brand">
+        <a class="nav_link" href="/">Brand</a>
+    </div>
+    <ul class="nav_items">
+        {{#if notAuth}}
+        <li class="nav_item">
+            <a class="nav_link" href="/login">Login</a>
+        </li>
+        <li class="nav_item">
+            <a class="nav_link" href="/register">Register</a>
+        </li>
+        {{/if}}
+        {{#if auth}}
+        <li class="nav_item">
+            <a class="nav_link" href="/profile">Profile</a>
+        </li>
+        <li class="nav_item">
+            <a class="nav_link" href="/settings">Settings</a>
+        </li>
+        <li class="nav_item">
+            <a class="nav_link" href="/logout">Logout</a>
+        </li>
+        {{/if}}
+    </ul>
+</nav>
